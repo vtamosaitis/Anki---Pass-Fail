@@ -1,6 +1,8 @@
+#
 # Changed version of original add-on found here: https://github.com/lambdadog/passfail2/
 #
-# Another version can also be found in the PassFail.py section here: https://web.archive.org/web/20201112025532if_/https://massimmersionapproach.com/table-of-contents/anki/low-key-anki/low-key-anki-summary-and-installation/
+# Another version can also be found in the PassFail.py section here: 
+#	https://web.archive.org/web/20201112025532if_/https://massimmersionapproach.com/table-of-contents/anki/low-key-anki/low-key-anki-summary-and-installation/
 #
 
 from anki.consts import CARD_TYPE_NEW, CARD_TYPE_REV, CARD_TYPE_LRN
@@ -16,7 +18,7 @@ BUTTON_LABEL =  {
                         '<div font-family:Arial;">Fail</div>',
                         '<div font-family:Arial;">Pass</div>'
                     ]
-                }
+}
 
 # Change Answer options to Again, Good, Easy for new cards and Pass/Fail for the rest.
 # Changes the buttons on the GUI
@@ -70,7 +72,7 @@ REMAP = {
 def myAnswerCard(self, ease):
     card_type = self.card.type
 	
-	# Simplify remappings by removing behavior from redundant keybindings:
+    # Simplify remappings by removing behavior from redundant keybindings:
     if card_type == CARD_TYPE_NEW and ease > 3:
         return
     elif card_type != CARD_TYPE_NEW and ease > 2:

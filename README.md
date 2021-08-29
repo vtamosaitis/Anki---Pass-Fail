@@ -1,4 +1,4 @@
-# Anki---Pass/Fail
+# Anki Pass/Fail
 
 ## What is the PassFail add-on?
 The original version of the PassFail add-on changes answer options from the usual N-ary to binary (Pass or Fail). You can read more about this, and why you might want to use this add-on, here: https://web.archive.org/web/20201112022719if_/https://massimmersionapproach.com/table-of-contents/anki/low-key-anki/low-key-anki-pass-fail/. 

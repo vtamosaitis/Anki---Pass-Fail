@@ -45,13 +45,11 @@ def myAnswerButtonList(self):
     
     return buttons_tuple
 
-# Remap keybindings guideline:
-#   Ease levels are remapped such that the behavior is as you'd expect based on the options
-#   'Again' maps to the 'Again' ease level, 'Good' to 'Good', and so on for New Cards
-#   For cards that are not new, 'Fail' maps to 'Again' ease level, and 'Pass' maps to 'Good' ease level.
+# Remap ease levels to match buttons. For new cards, ease levels are remapped to Again, Good, Easy.
+# Otherwise, the levels are remapped to Pass/Fail levels.
 REMAP = defaultdict( lambda: 
     {
-        2:  [1, 2],     # 1: Fail; 2: Pass
+        2:  [1, 2],     # Ease levels for non-new cards.
         3:  [1, 2],
         4:  [1, 3]
     }
@@ -61,8 +59,6 @@ REMAP[CARD_TYPE_NEW] = {
     3:  [1, 2, 3]
 }
 
-# Ease will correspond to the key pressed by happenstance, so we can remap the key to a new ease level.
-# Nothing will happen if you press a key shortcut above the number of buttons available.
 def myAnswerCard(self, ease):
     button_count = self.mw.col.sched.answerButtons(self.card)
     card_type = self.card.type

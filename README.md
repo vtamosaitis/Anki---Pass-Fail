@@ -1,8 +1,7 @@
 # Anki Pass/Fail
 
 ## What is the PassFail add-on?
-The original version of the PassFail add-on changes answer options from the usual N-ary to binary (Pass or Fail). You can read more about this, and why you might want to use this add-on, here: https://web.archive.org/web/20201112022719if_/https://massimmersionapproach.com/table-of-contents/anki/low-key-anki/low-key-anki-pass-fail/. 
-It is a preferred way to use Anki for some language learners.
+The original version of the PassFail add-on changes answer options from the usual N-ary to binary (Pass or Fail). You can read more about this, and why you might want to use this add-on, [here](https://web.archive.org/web/20201112022719if_/https://massimmersionapproach.com/table-of-contents/anki/low-key-anki/low-key-anki-pass-fail/). TLDR: It is a preferred way to use Anki for some language learners.
 
 This version differs from other versions in the behavior of New Cards. New cards will have three options instead of two: 'Again', 'Good', and 'Easy.' I have decided to make this change because Easy allows you to skip the 'steps' in Anki as well as take advantage of 'Easy Interval.' This is useful for cards on concepts that are not completely new to you. 
 
